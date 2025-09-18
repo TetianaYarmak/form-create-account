@@ -36,17 +36,17 @@
     </div>
 
     <div class="radio">
-      <input type="radio" id="male">
+      <input type="radio" id="male" name="gender">
       <label for="male">Male</label>
-      <input type="radio" id="female">
+      <input type="radio" id="female" name="gender">
       <label for="female">Female</label>
     </div>
 
     <div class="fields-form">
       <label for="country">
         <span>Country</span>
-        <select name="country" id="country" placeholder="Select">
-          <option value="" disabled selected hidden>Select</option>
+        <select name="country" id="country" class="select">
+          <option disabled selected hidden>Select</option>
           <option>Ukraine</option>
           <option>Poland</option>
           <option>Italy</option>
@@ -62,16 +62,20 @@
 
     <button class="sing-up" type="submit">Sign Up</button>
 
-    <p>
-      By clicking the 'Sign Up' button, you confirm that you accept our
-      <a href="##">Terms of Use</a>
-      and
-      <a href="##">Privacy Policy</a>
-      .
-    </p>
-
-    <span>Have an account?</span>
-    <a href="##">Log In</a>
+    <footer>
+      <p>
+        By clicking the 'Sign Up' button, you confirm that you accept our<br>
+        <a href="##">Terms of Use</a>
+        and
+        <a href="##">Privacy Policy</a>
+        .
+      </p>
+      <hr>
+      <div class="last-text">
+        <span>Have an account?</span>
+        <a href="##">Log In</a>
+      </div>
+    </footer>
   </form>
 </body>
 

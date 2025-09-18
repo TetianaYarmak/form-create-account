@@ -16,8 +16,19 @@
 <body>
   <form action="index.html">
     <h1 class="form-name">Profile</h1>
-    <img src="images/photo.png" alt="photo profile">
-    <span class="text-note">Up to 1 MB (300x300 px)</span>
+
+    <label class="photo">
+      <img src="images/photo.png" alt="photo profile">
+
+      <div class="line-photo">
+        <input type="file" name="file">
+        <input type="text" name="">
+        <span class="text-note">Up to 1 MB (300x300 px)</span>
+      </div>
+
+      <input type="text" name="basket" class="basket">
+
+    </label>
 
     <div class="fields-form">
       <label for="last-name">
@@ -32,7 +43,7 @@
 
       <label for="country">
         <span>Country</span>
-        <select name="country" id="country" placeholder="Select">
+        <select name="country" id="country" class="select">
           <option value="" disabled selected hidden>Select</option>
           <option>Ukraine</option>
           <option>Poland</option>
@@ -50,14 +61,14 @@
         <span>Zip Code</span>
         <input type="number" id="zip-code" name="zip-code" maxlength="6">
       </label>
-      
+
       <label for="tel">
         <span>Phone Number</span>
         <input type="tel" id="tel" name="tel">
       </label>
     </div>
 
-    <button type="submit">Update</button>
+    <button class="update" type="submit">Update</button>
   </form>
 
 </body>
